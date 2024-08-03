@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="discover.css">
+    <link rel="icon" href="images/favicon.ico" type="favicon" />
+    <title>Discord Servers</title>
+
+</head>
+
+<body>
+    <section id="spotlight">
+        <header>
+            <div class="wrapper">
+                <div class="container">
+                    <div class="logo">
+                        <h2>
+                            <a href="http://127.0.0.1:5501/discord.html#" target="_blank"><img
+                                    src="discover-images/svgexport-3.svg" alt="white-logo" /></a>
+                        </h2>
+                    </div>
+                    <nav class="menu">
+                        <div class="logo">
+                            <h2>
+                                <a href="http://127.0.0.1:5501/discord.html#"><img src="discover-images\black-logo.svg" alt="black-logo" /></a>
+                            </h2>
+                            <div class="ExitButton" id="hideSidebar">
+                                <a href="#" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                                        viewBox="0 -960 960 960" width="26px" fill="#000">
+                                        <path
+                                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a href="">Download</a></li>
+                            <li><a href="">Nitro</a></li>
+                            <li><a href="">Discover</a></li>
+                            <li><a href="">Safety</a></li>
+                            <li><a href="">Support</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Careers</a></li>
+                        </ul>
+                    </nav>
+                    <div class="login">
+                        <a href="" class="button">Login</a>
+                    </div>
+                    <div class="menu-button" id="ShowSidebar">
+                        <a href="#" class="icon"><img src="discover-images/svgexport-4.svg" alt="menu-icon" /></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="content">
+                <h2>FIND YOUR COMMUNITY ON DISCORD</h2>
+                <p>
+                    From gaming, to music, to learning, there's a place for you.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- data-section -->
+
+    <section id="data">
+        <div class="wrapper">
+            <div class="container">
+                <div class="search-elements">
+                    <div class="search_bar">
+                        <input type="text" placeholder="Explore communities" id="search" name="searchBar"
+                            autocomplete="off" />
+                    </div>
+                    <button class="iconSearch" id="searchButton" type="button">
+                        <span class="icon"><img src="discover-images/svgexport-6.svg" alt="searchIcon"></span>
+                    </button>
+                </div>
+                <div class="category-elements" role="button" id="show_ctgDiv">
+                    <div class="inner_container">
+                        <div class="text_category">Category</div>
+                        <span class="icon"><img src="discover-images/arrow2-01.svg" alt="WebIcon"></span>
+                    </div>
+                </div>
+                <div class="datas">
+                    <div class="inner-container">
+                        <div class="left-categories">
+                            <div class="button" role="button" id="all" tabindex=" 0">
+                                <span class="icon"><img src="discover-images/svgexport-7.svg" alt="WebIcon"></span>
+                                <h4>all</h4>
+                                <p class="numbers"></p>
+                            </div>
+                            <div class="button" role="button" id="gaming" tabindex="0">
+                                <span class="icon"><img src="discover-images/svgexport-8.svg" alt="WebIcon"></span>
+                                <h4>Gaming</h4>
+                                <p class="numbers"></p>
+                            </div>
+                            <div class="button" role="button" id="entertainment" tabindex="0">
+                                <span class="icon"><img src="discover-images/svgexport-9.svg" alt="WebIcon"></span>
+                                <h4>Entertainment</h4>
+                                <p class="numbers"></p>
+                            </div>
+                            <div class="button" role="button" id="education" tabindex="0">
+                                <span class="icon"><img src="discover-images/svgexport-10.svg" alt="WebIcon"></span>
+                                <h4>Education</h4>
+                                <p class="numbers"></p>
+                            </div>
+                            <div class="button" role="button" id="science" tabindex="0">
+                                <span class="icon"><img src="discover-images/svgexport-11.svg" alt="WebIcon"></span>
+                                <h4>Science & Tech</h4>
+                                <p class="numbers"></p>
+                            </div>
+                            <div class="button" role="button" id="music" tabindex="0">
+                                <span class="icon"><img src="discover-images/svgexport-12.svg" alt="WebIcon"></span>
+                                <h4>Music</h4>
+                                <p class="numbers"></p>
+                            </div>
+                        </div>
+                        <div class="right-data">
+                            <h1 id="total-results-header" class="array-count-header">  </h1>
+                        <div class="right-datas">
+
+                        </div>
+                        
+
+                        </div>
+                    </div>
+                    <div id="pagination" class="pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="discover.js" defer></script>
+
+</body>
+
+</html>

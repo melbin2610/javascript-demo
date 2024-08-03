@@ -1,0 +1,645 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+ol, ul {
+    list-style: none;
+}
+del {
+    text-decoration: line-through;
+}
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../discord.com/fonts/poppins-regular-webfont.woff2') format('woff2'),
+         url('../discord.com/fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:  "abc_ginto_nord_unlicensed_Blk";
+    src: url("../discord.com/fonts/abcgintonord-black-trial-bf651b7b7719b0f-webfont.woff2")format("woff2"),
+         url("../discord.com/fonts/abcgintonord-black-trial-bf651b7b7719b0f-webfont.woff")format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.wrapper {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'poppinsregular';
+}
+
+/* sportlight */
+
+#spotlight {
+    background-image: url(../image/d-left01.svg),
+        url(../image/d-right.svg), url(../image/d-bg.svg);
+    background-position: 0% 100%, 100% 100%, 50% 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 29%, 29%, cover;
+    background-color: #404eed;
+    object-fit: cover;
+}
+
+#spotlight header {
+    background-color: transparent;
+    height: 80px;
+}
+
+#spotlight header .wrapper {
+    max-width: 1180px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#spotlight header .wrapper .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 20px 0;
+}
+
+#spotlight header .wrapper .container .logo {
+    width: 124px;
+}
+#spotlight header .wrapper .container .logo h2 a img {
+    width: 100%;
+    display: block;
+}
+
+#spotlight header .wrapper .container .menu {
+    display: block;
+}
+
+#spotlight header .wrapper .container .menu .logo {
+    display: none;
+}
+
+#spotlight header .wrapper .container .menu .ExitButton {
+    width: 50px;
+}
+#spotlight header .wrapper .container .menu ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+#spotlight header .wrapper .container .menu ul li a {
+    display: block;
+    font-family: ;
+    color: #fff;
+    padding: 10px;
+}
+
+#spotlight header .wrapper .container .menu ul li a:hover {
+    text-decoration: underline;
+}
+
+#spotlight header .wrapper .container .login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#spotlight header .wrapper .container .login .button {
+    font-family:'poppinsregular';
+    font-weight: 700;
+    font-size: 14px;
+    padding: 9px 18px;
+    margin-right: 16px;
+    border-radius: 40px;
+    background: #fff;'poppinsregular'
+    display: block;
+    align-items: center;
+    color: #000;
+}
+
+#spotlight header .wrapper .container .menu-button {
+    display: none;
+}
+
+#spotlight header .wrapper .container .menu-button .icon {
+    display: block;
+}
+
+#spotlight header .wrapper .container .menu-button .icon img {
+    display: block;
+    width: 100%;
+}
+#spotlight .wrapper .content {
+    max-width: 980px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    padding: 90px 0 130px;
+}
+
+#spotlight .wrapper .content h2 {
+    font-family: "abc_ginto_nord_unlicensed_Blk";
+    font-size: 44px;
+    line-height: 41px;
+}
+
+#spotlight .wrapper .content p {
+    font-family: 'poppinsregular';
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 16px;
+}
+
+/* Section Data */
+
+#data {
+    padding: 130px 0;
+}
+#data .wrapper .container .search-elements {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 40px;
+    align-items: center;
+    max-width: 980px;
+}
+
+#data .wrapper .container .search-elements .search_bar {
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 0;
+    background-color: rgba(0, 0, 0, 0.08);
+    margin-right: 16px;
+    height: 52px;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+}
+
+#data .wrapper .container .search-elements .search_bar #search {
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    padding: 6px 12px;
+    background-color: rgba(0, 0, 0, 0.08);
+    outline: none;
+}
+
+#data .wrapper .container .search-elements .iconSearch {
+    background: #5764F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15%;
+    border: none;
+    width: 52px;
+    height: 52px;
+}
+
+#data .wrapper .container .search-elements .iconSearch:hover {
+    background-color: #4751C4;
+    cursor: pointer;
+}
+
+#data .wrapper .container .search-elements .iconSearch .icon {
+    width: 25px;
+}
+
+#data .wrapper .container .search-elements .iconSearch .icon img {
+    display: block;
+    width: 100%;
+}
+
+#data .wrapper .container .category-elements {
+    display: none;
+}
+
+#data .wrapper .container .category-elements .inner_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 12px;
+    border: 1px solid rgba(79, 84, 92, .6);
+    border-radius: 4px;
+}
+#data .wrapper .container .category-elements .inner_container .icon {
+    width: 24px;
+    height: 24px;
+}
+
+#data .wrapper .container .category-elements .inner_container .icon img {
+    display: block;
+    width: 100%;
+}
+
+#data .wrapper .container .show_category {
+    display: none;
+}
+#data .wrapper .container .show_category .inner_container .category_info {
+    display: flex;
+}
+#data .wrapper .container .datas .inner-container {
+    justify-content: center;
+    display: flex;
+
+}
+
+#data .wrapper .container .datas .inner-container .left-categories {
+    flex-direction: column;
+    display: flex;
+    margin-right: 20px;
+}
+
+#data .wrapper .container .datas .inner-container .left-categories .button {
+    width: 280px;
+    display: flex;
+    padding: 11px 14px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 12px 8px 0;
+}
+
+#data .wrapper .container .datas .inner-container .left-categories .button:hover {
+    cursor: pointer;
+}
+
+#data .wrapper .container .datas .inner-container .left-categories .button:focus {
+    background-color: rgba(0, 0, 0, 0.08);
+    font-family: 'poppinsregular';
+    border-radius: 5px;
+}
+
+#data .wrapper .container .datas .inner-container .left-categories .button .icon {
+    display: flex;
+    margin-right: 14px;
+    width: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+#data .wrapper .container .datas .inner-container .left-categories .button .icon img {
+    display: block;
+    width: 100%;
+}
+
+#data .wrapper .container .datas .inner-container .left-categories .button h4 {
+    font-size: 16px;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+#data .wrapper .container .datas .inner-container .left-categories .button .numbers {
+    font-size: 16px;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas {
+    width: 100%;
+    max-width: 680px;
+}
+#data .wrapper .container .datas .inner-container .right-data {
+    width: 100%;
+    max-width: 680px;
+}
+
+
+#data .wrapper .container .datas .inner-container .right-datas .head {
+    margin-bottom: 8px;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .head h3 {
+    font-family: 'poppinsregular';
+}
+
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents {
+    border-radius: 5px;
+    height: inherit;
+    margin-bottom: 15px;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button {
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element {
+    display: flex;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .image {
+    object-fit: cover;
+    height: 144px;
+    max-width: 256px;
+    width: 100%;
+    border-radius: 8px;
+    margin-right: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .image img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .contents {
+    width: 100%;
+    position: relative;
+}
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .contents .head {
+    display: flex;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .contents .head .icon {
+    width: 24px;
+    display: block;
+    margin-right: 8px;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .contents .head .icon img {
+    display: block;
+    width: 100%;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .contents .head h3 {
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .contents .info {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .contents .info p {
+    font-size: 14px;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .contents .info p::first-letter {
+    text-transform: uppercase;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .contents .subcribers {
+    display: flex;
+    align-items: center;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .contents .subcribers .online {
+    font-size: 12px;
+    color: #4e5058;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .contents .subcribers .dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #6d6f78;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px 8px;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .contents .subcribers .members {
+    font-size: 12px;
+    color: #4e5058;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .verified {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    width: fit-content;
+    bottom: 0;
+    position: absolute;
+    margin-top: auto;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .verified .icon {
+    width: 16px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .verified .icon img {
+    display: block;
+    width: 100%;
+}
+
+#data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .verified .text {
+    text-transform: uppercase;
+    font-family: 'poppinsregular' ;
+    font-size: 12px;
+    display: inline-block;
+}
+
+
+
+/*  */
+.pagination button.active { font-weight: bold; }
+.DataContents { margin: 10px 0; }
+.pagination button.active { font-weight: bold; }
+.pagination { margin-top: 20px; }
+.pagination button { margin: 0 5px; padding: 5px 10px; }
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination button {
+    margin: 2px;
+    padding: 5px 10px; /* Adjust padding as needed */
+    border: none; /* Remove border */
+    background-color: transparent; /* Transparent background */
+    color: #333; /* Text color */
+    cursor: pointer;
+    outline: none; /* Remove default focus outline */
+    border-radius: 20px; /* Adjust the value to change the level of roundness */
+}
+
+.pagination button.active {
+    background-color: #5865f2; 
+    color: #fff; 
+}
+
+
+/* responsive */
+
+
+@media only all and (max-width: 980px) {
+
+    #spotlight {
+        background-image: url(../image/d-bg.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #404eed;
+        object-fit: cover;
+    }
+
+    #spotlight header .wrapper .container .login {
+        margin-left: auto;
+    }
+
+    header .wrapper .container .logo {
+        display: none;
+    }
+
+    #spotlight header .wrapper .container .menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 999;
+        width: 350px;
+        height: 100vh;
+        background: #fefefe;
+        transition: 0.2s;
+        padding: 24px 24px 120px 24px;
+        border-radius: 2%;
+        display: none;
+        flex-direction: column;
+
+    }
+
+    #spotlight header .wrapper .container .menu ul {
+        display: block;
+    }
+
+    #spotlight header .wrapper .container .menu ul li {
+        display: block;
+    }
+
+    #spotlight header .wrapper .container .menu ul li a {
+        color: #23272a;
+
+    }
+
+    #spotlight header .wrapper .container .menu .logo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid #ebedef;
+        margin-bottom: 16px;
+        padding-bottom: 24px;
+    }
+
+    #spotlight header .wrapper .container .menu .logo h2 {
+        width: 125px;
+    }
+
+    #spotlight header .wrapper .container .menu .ExitButton {
+        width: 25px;
+    }
+
+    #spotlight header .wrapper .container .menu-button {
+        display: block;
+    }
+
+    #spotlight header .wrapper .container .login {
+        margin-left: auto;
+    }
+
+    #spotlight .wrapper .content h2 {
+        font-size: 28px;
+        text-align: left;
+    }
+
+    #spotlight .wrapper .content p {
+        text-align: left;
+        font-size: 19px;
+    }
+
+    #data .wrapper .container .search-elements {
+        margin: 0;
+    }
+
+    #data .wrapper .container .category-elements {
+        display: block;
+    }
+
+    #data .wrapper .container .show_category {
+        display: none;
+    }
+
+    #data .wrapper .container .category-elements .inner_container {
+        margin: 15px 0;
+    }
+
+    #data .wrapper .container .datas .inner-container .left-categories {
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: none;
+    }
+
+    #data .wrapper .container .datas .inner-container .left-categories .button {
+        width: inherit;
+        background-color: rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+        padding: 8px 16px;
+    }
+
+    #data .wrapper .container .datas .inner-container .left-categories .button .icon {
+        width: 40px;
+    }
+
+    #data .wrapper .container .datas .inner-container {
+        display: block;
+    }
+
+    #data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .image {
+        display: none;
+    }
+
+    #data .wrapper .container .datas .inner-container {
+        justify-content: start;
+    }
+   
+
+    #data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .contents .head .icon {
+      
+        display: block
+        
+    }
+
+    #data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .verified {
+        display: none;
+    }
+}
+@media only all and (max-width: 680px) {
+    #data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .contents .head .icon{
+        width: 25px;
+        height: 25px;
+    }
+
+}
+@media only all and (max-width: 320px) {
+    #spotlight .wrapper .content h2 {
+        font-size: 20px;
+    }
+    #spotlight .wrapper .content p {
+        font-size: 16px;
+    }
+    #data .wrapper .container .datas .inner-container .right-datas .DataContents .button .element .contents .info p {
+        font-size: 16px;
+    }
+
+}
